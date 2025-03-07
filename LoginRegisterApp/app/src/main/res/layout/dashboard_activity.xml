@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/layoutDashboard"
+    android:background="@drawable/background_img">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/subLayoputDashboard"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="25dp"
+        android:background="@drawable/rounded_white_bg">
+
+        <TextView
+            android:id="@+id/tvFirstHello"
+            android:layout_width="315dp"
+            android:layout_height="40dp"
+            android:hint="Hello:"
+            android:textSize="30sp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="50dp"
+            />
+
+        <ImageView
+            android:id="@+id/ivHello"
+            android:layout_width="188dp"
+            android:layout_height="179dp"
+            android:layout_marginStart="88dp"
+            android:layout_marginTop="288dp"
+            android:src="@drawable/ic_hello"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

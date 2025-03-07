@@ -1,0 +1,139 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_img"
+    android:id="@+id/layoutLogin">
+
+    <!-- White Background with Rounded Corners -->
+    <RelativeLayout
+        android:id="@+id/subLayoutLogin"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="25dp"
+        android:layout_centerInParent="true"
+        android:padding="20dp"
+        android:background="@drawable/rounded_white_bg">
+
+        <!-- Login Title -->
+        <TextView
+            android:id="@+id/tvLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="200dp"
+            android:text="Login"
+            android:textColor="@android:color/black"
+            android:textSize="35sp"
+            android:textStyle="bold"/>
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/tvSubTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvLogin"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="5dp"
+            android:text="Please Sign in to continue"
+            android:textColor="#808080"
+            android:textSize="20sp"/>
+
+        <!-- Email Input -->
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/tvSubTitle"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/input_bg"
+            android:drawableStart="@drawable/ic_email"
+            android:drawablePadding="10dp"
+            android:hint="Email"
+            android:padding="15dp"
+            android:textColor="@android:color/black"
+            android:textSize="16sp"/>
+
+        <!-- Password Input with Forgot Password -->
+        <RelativeLayout
+            android:id="@+id/passwordLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/etEmail"
+            android:layout_marginTop="15dp">
+
+            <!-- Password Input -->
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/input_bg"
+                android:drawableStart="@drawable/ic_lock"
+                android:drawablePadding="10dp"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="15dp"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:paddingEnd="70dp"/>
+
+            <!-- Forgot Password Text -->
+            <TextView
+                android:id="@+id/tvForgotPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="15dp"
+                android:text="FORGOT"
+                android:textColor="#FFA500"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordLayout"
+            android:layout_width="350dp"
+            android:layout_marginTop="50dp"
+            android:layout_centerHorizontal="true">
+
+            <!-- Login Button -->
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btnLogin"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:drawableEnd="@drawable/ic_pointer"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/button_bg"
+                android:text="LOGIN"
+                android:textAllCaps="false"
+                android:textSize="18sp" />
+
+            <!-- Sign Up Text (Below Login Button) -->
+            <TextView
+                android:id="@+id/tvNoAccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:text="Don't have an account?"
+                android:textColor="@android:color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvBackSignUp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tvNoAccount"
+                android:layout_alignBottom="@id/tvNoAccount"
+                android:text="Sign up"
+                android:textColor="#FFA500"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>
